@@ -8,14 +8,8 @@
   <style>
   body {
       margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .video-container {
-      position: relative;
-      width: 100%;
-      height: 100vh; /* Full viewport height */
-      overflow: hidden;
+      font-family: monospace;
+      font-size: 2rem;
     }
 
     .background-video {
@@ -23,53 +17,24 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       object-fit: cover; /* Ensures the video covers the container */
       z-index: -1; /* Places the video behind other content */
     }
-
-    .overlay-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none; /* Ensures the overlay doesn't block user interactions */
-      z-index: 2;
-    }
-
-
-    .overlay-video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 2;
-      pointer-events: none; /* Avoid blocking text interactions */
-    }
-
-    .content-on-video {
-      position: relative;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .main-content {
-      padding: 20px;
-      background: #f4f4f4;
-    }
-
-    body {
-      font-family: monospace;
-      font-size: 2rem;
-    }
     #info {
+      position: relative;
       padding: 50px;
+      padding-bottom: 0;
       text-align: center;
-      margin-bottom: 45px;
+      margin-bottom: 0px;
+    }
+    #seperate {
+      position: relative;
+      height: 10px;
     }
     #videography {
-      margin-top: 0px;
+      position: relative;
+      top: 20vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -107,11 +72,13 @@
         </video>
     <h2>David Atsmi</h2>
     <h3>> Videography ></h3>
-    <p><br>I'm a camera-man, video editor and VFX artist based in Jerusalem.<br><br></p>
+    <p><br>I'm a camera-man, video editor and VFX artist<br>based in Jerusalem.<br><br></p>
     <p>> > > <br><br>+972542230907<br>atsmid@gmail.com<br><br>> > ><br><br></p>
     <h3 id="down0"><br><br></h3>
     <h3 id="down"><br>&#8964;</h3>
 
+  </div>
+  <div id="seperate">
   </div>
   <div id="videography">
     <lite-youtube id="vatta" videoid="j26rwMggvjE" start="78"></lite-youtube>
