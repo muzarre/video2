@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Full viewport height */
+      overflow: hidden;
+    }
+
+    .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the video covers the container */
+      z-index: -1; /* Places the video behind other content */
+    }
+
+    .overlay-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* Ensures the overlay doesn't block user interactions */
+      z-index: 2;
+    }
+
+
+    .overlay-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 2;
+      pointer-events: none; /* Avoid blocking text interactions */
+    }
+
+    .content-on-video {
+      position: relative;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .main-content {
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    body {
+      font-family: monospace;
+      font-size: 2rem;
+    }
+    #info {
+      padding: 50px;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    #videography {
+      margin-top: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+    }
+    p {
+      font-size: 1rem;
+    }
+    #down {
+      animation: blinker 6s ease infinite;
+    }
+    @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+  </style>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
+</head>
+
+<body>
+  <div id="info">
+    <video class="background-video" autoplay muted loop playsinline>
+      <source src="noise8.mp4" type="video/mp4">
+
+        </video>
+    <h2>David Atsmi</h2>
+    <h3>> Videography ></h3>
+    <p><br>I'm a camera-man, video editor and VFX artist<br>based in Jerusalem.<br><br></p>
+    <p>> > > <br><br>+972542230907<br>atsmid@gmail.com<br><br>> > ><br><br></p>
+    <h3 id="down"><br><br><br>&#8964;</h3>
+
+  </div>
+  <div id="videography">
+    <lite-youtube id="vatta" videoid="j26rwMggvjE" start="78"></lite-youtube>
+<lite-youtube id="tauber" videoid="nBKen-NFzEo"></lite-youtube>
+<lite-youtube id="fast-shalem" videoid="pEEWwcTmuj8"></lite-youtube>
+<lite-youtube id="yomanei-shalem" videoid="WmRlfgpHM80"></lite-youtube>
+<lite-youtube id="washington" videoid="Z9wBoMFNuZM"></lite-youtube>
+<lite-youtube id="india" videoid="ndNOe-6HGfw" start="16"></lite-youtube>
+<lite-youtube id="san-fransisco" videoid="hgY8Qdm0Vrc"></lite-youtube>
+<lite-youtube id="wedding" videoid="LJmhoPrjtdM" start="281"></lite-youtube>
+<lite-youtube id="wedding2" videoid="-c-d7eCQOn8" start="198"></lite-youtube>
+<lite-youtube id="mizrahit" videoid="WJfr2juoiuI"></lite-youtube>
+<lite-youtube id="numbers" videoid="DwFSNXLJYeU" start="11"></lite-youtube>
+<lite-youtube id="ori" videoid="2ryMwRT550U"></lite-youtube>
+<lite-youtube id="inbar" videoid="ImV1kqlyse4"></lite-youtube>
+<lite-youtube id="swisa" videoid="4qWvjB-bQWY" start="8"></lite-youtube>
+<lite-youtube id="rivka" videoid="QRqAnY7wtoI" start="8"></lite-youtube>
+<lite-youtube id="sapir" videoid="jvKAb1jy5_A" start="9"></lite-youtube>
+<lite-youtube id="fkade" videoid="ObUk_IIeHiM" start="6"></lite-youtube>
+<lite-youtube id="students" videoid="kX8u-NrqsAk"></lite-youtube>
+<lite-youtube id="dvir" videoid="le1N0Rm0QJU" start="8"></lite-youtube>
+<lite-youtube id="guri" videoid="9hxeBJCnuIE" start="25"></lite-youtube>
+<lite-youtube id="gracefield" videoid="NkyU2ja4wQo"></lite-youtube>
+<lite-youtube id="itay" videoid="R5okfK2zHpI" start="13"></lite-youtube>
+<lite-youtube id="gala" videoid="xQ4HC2aAZVk" start="7"></lite-youtube>
+<lite-youtube id="ktav-yaad" videoid="W8PErXiIBZI"></lite-youtube>
+<lite-youtube id="east-jlm" videoid="8Wz3kLQj7Zs"></lite-youtube>
+<lite-youtube id="odelia1" videoid="vP8HV1aQbrM"></lite-youtube>
+<lite-youtube id="odelia2" videoid="r9Zx-lcVJxQ"></lite-youtube>
+<lite-youtube id="odelia3" videoid="TKq1TZNKu7I"></lite-youtube>
+<lite-youtube id="sipur-israeli" videoid="HDGZtzptOh4"></lite-youtube>
+<lite-youtube id="fine-line" videoid="rufoTywnLMg" start="8"></lite-youtube>
+<lite-youtube id="ear-zion" videoid="nElWM6AW2Nw"></lite-youtube>
+<lite-youtube id="tal" videoid="zwZyASEH9yA" start="6"></lite-youtube>
+<lite-youtube id="omri" videoid="bkGK0KSh2hw" start="9"></lite-youtube>
+<lite-youtube id="haim-ezra" videoid="wyVDHqSS7nQ" start="5"></lite-youtube>
+<lite-youtube id="shira" videoid="viLQMgWBjek" start="11"></lite-youtube>
+<lite-youtube id="tlv" videoid="RlRlj88HvUs"></lite-youtube>
+<lite-youtube id="south" videoid="jeVkv_yy4nM"></lite-youtube>
+<lite-youtube id="shuk" videoid="V0YwNEKtRCc"></lite-youtube>
+<lite-youtube id="grossman" videoid="GOdvht9IM3M" start="163"></lite-youtube>
+<lite-youtube id="building" videoid="0PvfxABuwUQ"></lite-youtube>
+<lite-youtube id="year-review" videoid="Ga8o2gI09_I" start="7"></lite-youtube>
+<lite-youtube id="arabic" videoid="7royrwG8WEQ"></lite-youtube>
+<lite-youtube id="shiputz" videoid="Smgt53bo0yA"></lite-youtube>
+<lite-youtube id="shvartz" videoid="F5ZXY8HRjvQ" start="9"></lite-youtube>
+<lite-youtube id="ido" videoid="UZbpYEnqx0k"></lite-youtube>
+<lite-youtube id="lerman" videoid="_ae-Ty5gI8U"></lite-youtube>
+<lite-youtube id="kass" videoid="rUvh3J5wRKk"></lite-youtube>
+<lite-youtube id="matanel" videoid="pIiK2PCUwaA"></lite-youtube>
+<lite-youtube id="ori2" videoid="gDlL-1htyk0"></lite-youtube>
+<lite-youtube id="mordi" videoid="4rUXHz3tWWc" start="13"></lite-youtube>
+<lite-youtube id="first-ido" videoid="c4__g1yOM30"></lite-youtube>
+<lite-youtube id="meir-shalev" videoid="pju7hKhYZAY" start="2219"></lite-youtube>
+<lite-youtube id="first-shalem" videoid="oSPWU65WBOg" start="82"></lite-youtube>
+<lite-youtube id="relativism" videoid="IwiMe2zU0WY"></lite-youtube>
+<lite-youtube id="goodman" videoid="aPkPFLOSGtI"></lite-youtube>
+<lite-youtube id="kumeran" videoid="Lv7n0Ljr2T0"></lite-youtube>
+<lite-youtube id="gan-eden" videoid="E3vVva5U7ic"></lite-youtube>
+<lite-youtube id="vatta-night" videoid="a6SrOWQhetQ"></lite-youtube>
+<lite-youtube id="clouds" videoid="8dzrd_5RPU4"></lite-youtube>
+
+  </div>
+
+</body>
+
+
+</html>
