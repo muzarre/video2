@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+  body {
+      margin: 0;
+      font-family: monospace;
+      font-size: 2rem;
+    }
+
+    .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the video covers the container */
+      z-index: -1; /* Places the video behind other content */
+    }
+    #info {
+      height: 100vh;
+      position: relative;
+      padding: 20px;
+      padding-bottom: 0;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    #seperate1 {
+      background-color: red;
+      position: relative;
+      height: 10px;
+    }
+    #seperate2 {
+      background-color: green;
+      position: relative;
+      height: 10px;
+    }
+    #seperate3 {
+      background-color: blue;
+      position: relative;
+      height: 10px;
+    }
+    #videography {
+      background-color: black;
+      color: white;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+    }
+    p {
+      font-size: 2vh;
+    }
+    h2 {
+      font-size: 6vh;
+    }
+    h3 {
+      font-size: 4vh;
+    }
+    #down0 {
+      font-size: 1vh;
+    }
+    #down {
+      animation: blinker 1s ease infinite;
+    }
+    #down2 {
+      animation: blinker 1.1s ease infinite;
+    }
+    #down3 {
+      animation: blinker 1.2s ease infinite;
+    }
+    @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+  </style>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
+</head>
+
+<body>
+  <div id="info">
+    <video class="background-video" autoplay muted loop playsinline>
+      <source src="noise8.mp4" type="video/mp4">
+
+        </video>
+    <h2><br><br>David Atsmi</h2>
+    <h3>> Videography ></h3>
+    <p><br>I'm a camera-man, video editor and VFX artist based in Jerusalem.<br><br></p>
+    <p>> > > <br><br>+972542230907<br>atsmid@gmail.com<br><br>> > ><br><br></p>
+    <p id="down0"><br><br></p>
+    <p id="down">&#8964;</p>
+    <p id="down2">&#8964;<p>
+    <p id="down3">&#8964;</p>
+
+  </div>
+  <div id="seperate1"></div>
+  <div id="seperate2"></div>
+  <div id="seperate3"></div>
+  <div id="videography">
+<h3><br><br>Filmed & edited by me:<br><br></h3>
+<lite-youtube id="fast-shalem" videoid="pEEWwcTmuj8"></lite-youtube>
+<lite-youtube id="yomanei-shalem" videoid="WmRlfgpHM80"></lite-youtube>
+<lite-youtube id="numbers" videoid="DwFSNXLJYeU" start="11"></lite-youtube>
+<lite-youtube id="washington" videoid="Z9wBoMFNuZM"></lite-youtube>
+<lite-youtube id="san-fransisco" videoid="hgY8Qdm0Vrc"></lite-youtube>
+<lite-youtube id="wedding" videoid="LJmhoPrjtdM" start="281"></lite-youtube>
+<lite-youtube id="wedding2" videoid="-c-d7eCQOn8" start="198"></lite-youtube>
+<lite-youtube id="ori" videoid="2ryMwRT550U"></lite-youtube>
+<lite-youtube id="inbar" videoid="ImV1kqlyse4"></lite-youtube>
+<lite-youtube id="swisa" videoid="4qWvjB-bQWY" start="8"></lite-youtube>
+<lite-youtube id="guri" videoid="9hxeBJCnuIE" start="25"></lite-youtube>
+<lite-youtube id="gala" videoid="xQ4HC2aAZVk" start="7"></lite-youtube>
+<lite-youtube id="east-jlm" videoid="8Wz3kLQj7Zs"></lite-youtube>
+<lite-youtube id="odelia1" videoid="vP8HV1aQbrM"></lite-youtube>
+<lite-youtube id="ear-zion" videoid="nElWM6AW2Nw"></lite-youtube>
+<lite-youtube id="building" videoid="0PvfxABuwUQ"></lite-youtube>
+<lite-youtube id="year-review" videoid="Ga8o2gI09_I" start="7"></lite-youtube>
+<lite-youtube id="arabic" videoid="7royrwG8WEQ"></lite-youtube>
+<lite-youtube id="kass" videoid="rUvh3J5wRKk"></lite-youtube>
+<lite-youtube id="ori2" videoid="gDlL-1htyk0"></lite-youtube>
+<lite-youtube id="vatta" videoid="j26rwMggvjE" start="78"></lite-youtube>
+<h3><br>Filmed by me:<br><br></h3>
+<lite-youtube id="tauber" videoid="nBKen-NFzEo"></lite-youtube>
+<lite-youtube id="india" videoid="ndNOe-6HGfw" start="16"></lite-youtube>
+
+  </div>
+
+</body>
+
+
+</html>
